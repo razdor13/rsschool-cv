@@ -1,1 +1,106 @@
-
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-family: "Abril Fatface", cursive;
+	font-family: "Raleway", sans-serif;
+}
+.header {
+	font-family: "Raleway", sans-serif;
+	font-size: 20px;
+	width: 100%;
+}
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.nav-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	padding: 20px;
+	margin: 0;
+	text-transform: uppercase;
+	background-color: #66a5ad;
+}
+.link-list {
+	text-decoration-line: overline;
+	cursor: pointer;
+	text-decoration-color: #003b46;
+	color: #003b46;
+	transition: color 0.5s;
+}
+a:hover {
+	color: rgb(9, 82, 71);
+}
+.sidebar {
+	width: 30%;
+	background-color: #07575b;
+	padding: 20px 0 20px 0;
+}
+.main .container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.mainbar {
+	width: 70%;
+	background-color: #c4dfe6;
+}
+@media (max-width: 768px) {
+	.mainbar {
+		width: 100%;
+	}
+}
+@media (max-width: 768px) {
+	.sidebar {
+		width: 100%;
+	}
+}
+.photo_link {
+	display: block;
+	border-radius: 100%;
+	width: 432px;
+	box-shadow: 0 1px 4px rgb(0 0 0 / 60%);
+	max-width: 90%;
+	margin: 0 auto;
+}
+.page_title {
+	margin: 70px 40px 70px 150px;
+	font-family: "Abril Fatface", cursive;
+}
+.sub_title {
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+}
+.deskr .deskr_item {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-color: #66a5ad;
+	border-radius: 100%;
+	
+}
+.deskr {
+	display: flex ;
+	width: 80%;
+	height: 50px;
+	background-color: #003b46;
+	padding: 10px;
+	border-radius: 15px;
+}
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.deskr_text {
+	padding-left: 40px;
+	color: white;
+	
+}
+.deskr_text_in {
+	padding: 30px;
+}
