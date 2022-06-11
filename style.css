@@ -7,24 +7,34 @@ html {
 	font-family: "Abril Fatface", cursive;
 	font-family: "Raleway", sans-serif;
 }
-.header {
-	font-family: "Raleway", sans-serif;
-	font-size: 20px;
+.backheader {
+	height: 44px;
 	width: 100%;
+	background-color: #07575b;
+}
+.header {
+	position: -webkit-sticky;
+	position: fixed;
+	top: 0px;
+	font-family: "Raleway", sans-serif;
+	font-size: 70%;
+	height: 70px;
+	width: 100%;
+	z-index: 2; /* * */
 }
 .container {
+	position: relative;
 	max-width: 1440px;
 	margin: 0 auto;
 }
 .nav-list {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: space-evenly;
 	list-style: none;
-	padding: 20px;
-	margin: 0;
+	padding-top: 15px;
 	text-transform: uppercase;
-	background-color: #66a5ad;
+	background-color: #66a5adda;
+	text-align: center;
 }
 .link-list {
 	text-decoration-line: overline;
@@ -34,12 +44,13 @@ html {
 	transition: color 0.5s;
 }
 a:hover {
-	color: rgb(9, 82, 71);
+	color: rgb(255, 0, 38);
 }
 .sidebar {
 	width: 30%;
 	background-color: #07575b;
 	padding: 20px 0 20px 0;
+	color: white;
 }
 .main .container {
 	display: flex;
@@ -48,6 +59,12 @@ a:hover {
 .mainbar {
 	width: 70%;
 	background-color: #c4dfe6;
+}
+@media (max-width: 768px) {
+	.nav {
+		width: 100%;
+		font-size: 5px;
+	}
 }
 @media (max-width: 768px) {
 	.mainbar {
@@ -75,32 +92,114 @@ a:hover {
 	font-family: "Raleway", sans-serif;
 	font-weight: 400;
 }
-.deskr .deskr_item {
-	display: block;
-	width: 30px;
-	height: 30px;
-	background-color: #66a5ad;
-	border-radius: 100%;
-	
-}
 .deskr {
-	display: flex ;
+	display: flex;
 	width: 80%;
 	height: 50px;
 	background-color: #003b46;
 	padding: 10px;
 	border-radius: 15px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
-section {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.deskr .deskr_item {
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: #66a5ad;
+	border-radius: 50%;
 }
-.deskr_text {
-	padding-left: 40px;
+
+section .deskr_text {
+	font-size: 29px;
+	margin-left: 16%;
 	color: white;
-	
 }
 .deskr_text_in {
-	padding: 30px;
+	padding-left: 12%;
+	padding-right: 10%;
+}
+.deskr_text_ul {
+	padding-left: 14%;
+	padding-right: 10%;
+	font-size: 20px;
+}
+pre {
+	margin-left: 1%;
+}
+.projectbnet {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 12%;
+	margin-bottom: 5%;
+}
+.projectbnet_img {
+	display: block;
+	width: 70%;
+	box-shadow: 2px 3px 5px rgb(0 0 0 / 60%);
+}
+.link_bnet {
+	display: block;
+}
+.footer_item {
+	height: 15px;
+	background-color: #07575b;
+}
+section {
+	font-family: "Raleway", sans-serif;
+}
+.deskr_text_ul_contacts {
+	padding-left: 18%;
+	padding-right: 10%;
+	line-height: 40px;
+	font-family: "Roboto", sans-serif;
+}
+.footer_section {
+	display: flex;
+	justify-content: flex-start;
+	height: 100px;
+	background-color: #033a4d;
+	padding: 20px;
+}
+.gitlogo {
+	display: block;
+	position: relative;
+	padding-left: 5px;
+	padding-top: 35px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: white;
+
+}
+.rsslogo {
+	display: block;
+	height: 60px;
+}
+.gitlogo::before {
+	content: "";
+	position: absolute;
+	background-image: url(./assets/pngwing.com.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	left: 0px;
+	bottom: 0px;
+	height: 65px;
+	width: 114px;
+}
+.date {
+	justify-self: flex-end;
+	margin-left: auto ;
+	margin-top: auto;
+	line-height: 17px ;
+}
+.flag-up {
+	font-size: 32px;
+	color: #587aff;
+}
+.flag-down {
+	color: #fffb41;
 }
