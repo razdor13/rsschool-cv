@@ -208,13 +208,14 @@ section {
 	color: #587aff;
 }
 .flag-down {
+	font-size: 25px;
 	color: #fffb41;
 }
 @media (max-width: 768px) {
 	.date .flag-up,
 	.flag-down {
 		width: 100%;
-		font-size: 10px;
+		font-size: 20px;
 	}
 }
 @media (max-width: 768px) {
@@ -222,4 +223,7 @@ section {
 		width: 100%;
 		font-size: 17px;
 	}
+}
+pre {
+	padding-left: 4%;
 }
