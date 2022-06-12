@@ -1,0 +1,229 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-family: "Abril Fatface", cursive;
+	font-family: "Raleway", sans-serif;
+	scroll-behavior: smooth;
+}
+.backheader {
+	height: 44px;
+	width: 100%;
+	background-color: #07575b;
+}
+.header {
+	position: -webkit-sticky;
+	position: fixed;
+	top: 0px;
+	font-family: "Raleway", sans-serif;
+	font-size: 70%;
+	height: 70px;
+	width: 100%;
+	z-index: 2; /* * */
+}
+.container {
+	position: relative;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.nav-list {
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+	padding-top: 15px;
+	text-transform: uppercase;
+	background-color: #66a5adda;
+	text-align: center;
+}
+.link-list {
+	text-decoration-line: overline;
+	cursor: pointer;
+	text-decoration-color: #003b46;
+	color: #003b46;
+	transition: color 0.5s;
+}
+a:hover {
+	color: rgb(255, 0, 38);
+	
+}
+.sidebar {
+	width: 30%;
+	background-color: #07575b;
+	padding: 20px 0 20px 0;
+	color: white;
+}
+.main .container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.mainbar {
+	width: 70%;
+	background-color: #c4dfe6;
+}
+@media (max-width: 768px) {
+	.nav {
+		width: 100%;
+		font-size: 9px;
+	}
+}
+@media (max-width: 768px) {
+	.mainbar {
+		width: 100%;
+	}
+}
+@media (max-width: 768px) {
+	.sidebar {
+		width: 100%;
+	}
+}
+@media (max-width: 768px) {
+	.coderev {
+		width: 100%;
+		font-size: 15px;
+	}
+}
+.photo_link {
+	display: block;
+	border-radius: 100%;
+	width: 432px;
+	box-shadow: 0 1px 4px rgb(0 0 0 / 60%);
+	max-width: 90%;
+	margin: 0 auto;
+}
+.page_title {
+	margin: 70px 40px 70px 150px;
+	font-family: "Abril Fatface", cursive;
+}
+.sub_title {
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+}
+.deskr {
+	display: flex;
+	width: 80%;
+	height: 50px;
+	background-color: #003b46;
+	padding: 10px;
+	border-radius: 15px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.deskr .deskr_item {
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: #66a5ad;
+	border-radius: 50%;
+}
+
+section .deskr_text {
+	font-size: 29px;
+	margin-left: 16%;
+	color: white;
+}
+.deskr_text_in {
+	padding-left: 12%;
+	padding-right: 10%;
+}
+.deskr_text_ul {
+	padding-left: 14%;
+	padding-right: 10%;
+	font-size: 20px;
+}
+pre {
+	margin-left: 1%;
+}
+.projectbnet {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 12%;
+	margin-bottom: 5%;
+}
+.projectbnet_img {
+	display: block;
+	width: 70%;
+	box-shadow: 2px 3px 5px rgb(0 0 0 / 60%);
+}
+.link_bnet {
+	display: block;
+}
+.footer_item {
+	height: 15px;
+	background-color: #07575b;
+}
+section {
+	font-family: "Raleway", sans-serif;
+}
+.deskr_text_ul_contacts {
+	padding-left: 18%;
+	padding-right: 10%;
+	line-height: 40px;
+	font-family: "Roboto", sans-serif;
+}
+.footer_section {
+	display: flex;
+	justify-content: flex-start;
+	height: 100px;
+	background-color: #033a4d;
+	padding: 20px;
+}
+.gitlogo {
+	display: block;
+	position: relative;
+	padding-left: 5px;
+	padding-top: 35px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: white;
+}
+.rsslogo {
+	display: block;
+	height: 60px;
+}
+.gitlogo::before {
+	content: "";
+	position: absolute;
+	background-image: url(./assets/pngwing.com.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	left: 0px;
+	bottom: 0px;
+	height: 65px;
+	width: 114px;
+}
+.date {
+	justify-self: flex-end;
+	margin-left: auto;
+	margin-top: auto;
+	line-height: 17px;
+}
+.flag-up {
+	font-size: 32px;
+	color: #587aff;
+}
+.flag-down {
+	font-size: 25px;
+	color: #fffb41;
+}
+@media (max-width: 768px) {
+	.date .flag-up,
+	.flag-down {
+		width: 100%;
+		font-size: 20px;
+	}
+}
+@media (max-width: 768px) {
+	.main_title {
+		width: 100%;
+		font-size: 17px;
+	}
+}
+pre {
+	padding-left: 4%;
+}
