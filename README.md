@@ -1,3 +1,2 @@
-https://razdor13.github.io/rsschool-cv/cv
-my cv
+# rsschool-cv
 https://razdor13.github.io/rsschool-cv/
